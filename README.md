@@ -2,7 +2,7 @@
 
 Wasel is an Arabic-first COD operations agent for small Egyptian ecommerce stores. It detects risky orders, collects missing delivery details, confirms orders, and recovers failed deliveries while maintaining a measurable audit trail.
 
-This repository contains the Day 1 and Day 2 hackathon MVP:
+This repository contains the hackathon MVP:
 
 - CSV ingestion and ten-order demo dataset
 - Address, phone, duplicate, high-value, and failed-delivery checks
