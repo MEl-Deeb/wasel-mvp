@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Wasel Impact Dashboard</title>
+  <style>
+    :root { --ink:#17201c; --muted:#637069; --green:#126b4a; --lime:#d9f46c; --cream:#f5f3e9; --line:#d9ddd7; }
+    * { box-sizing:border-box; }
+    body { margin:0; font:15px/1.5 Inter,Segoe UI,sans-serif; background:var(--cream); color:var(--ink); }
+    main { width:min(1160px,calc(100% - 32px)); margin:40px auto; }
+    header { display:flex; justify-content:space-between; gap:24px; align-items:end; margin-bottom:24px; }
+    h1 { font-size:42px; letter-spacing:-1.5px; margin:0; }
+    .eyebrow { color:var(--green); font-weight:800; text-transform:uppercase; letter-spacing:1px; }
+    .cards { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin:24px 0; }
+    .card { background:white; border:1px solid var(--line); border-radius:16px; padding:20px; }
+    .card span { display:block; color:var(--muted); }
+    .card strong { display:block; font-size:27px; margin-top:8px; }
+    section { background:white; border:1px solid var(--line); border-radius:16px; padding:20px; margin-top:16px; overflow:auto; }
+    h2 { margin:0 0 14px; font-size:20px; }
+    table { width:100%; border-collapse:collapse; white-space:nowrap; }
+    th,td { text-align:left; padding:11px 10px; border-bottom:1px solid #edf0ec; }
+    th { color:var(--muted); font-size:12px; text-transform:uppercase; letter-spacing:.5px; }
+    .status { background:var(--lime); border-radius:999px; padding:4px 9px; font-weight:700; }
+    .note { color:var(--muted); max-width:600px; }
+    @media (max-width:800px) { .cards { grid-template-columns:1fr 1fr; } header { display:block; } }
+  </style>
+</head>
+<body><main>
+  <header><div><div class="eyebrow">Wasel · COD operations agent</div><h1>Impact dashboard</h1></div><p class="note">Generated from the agent's append-only audit log. Values represent the included demo dataset, not a production claim.</p></header>
+  <div class="cards"><article class="card"><span>Revenue protected</span><strong>EGP 1,250</strong></article><article class="card"><span>Revenue recovered</span><strong>EGP 760</strong></article><article class="card"><span>Delivery cost avoided</span><strong>EGP 60</strong></article><article class="card"><span>Staff time saved</span><strong>21 min</strong></article></div>
+  <section><h2>Order queue</h2><table><thead><tr><th>Order</th><th>Customer</th><th>Value</th><th>Status</th><th>Risk</th><th>Issues</th></tr></thead><tbody><tr><td>WSL-1010</td><td>Laila Emad</td><td>EGP 1,450</td><td><span class='status'>address needed</span></td><td>65</td><td>incomplete_address, missing_landmark</td></tr><tr><td>WSL-1005</td><td>Ahmed Samir</td><td>EGP 2,100</td><td><span class='status'>needs confirmation</span></td><td>25</td><td>high_value</td></tr><tr><td>WSL-1007</td><td>Youssef Khaled</td><td>EGP 3,200</td><td><span class='status'>needs confirmation</span></td><td>25</td><td>high_value</td></tr><tr><td>WSL-1001</td><td>Sara Adel</td><td>EGP 850</td><td><span class='status'>needs confirmation</span></td><td>15</td><td>—</td></tr><tr><td>WSL-1003</td><td>Mariam Ali</td><td>EGP 430</td><td><span class='status'>needs confirmation</span></td><td>15</td><td>—</td></tr><tr><td>WSL-1009</td><td>Karim Wael</td><td>EGP 980</td><td><span class='status'>needs confirmation</span></td><td>15</td><td>—</td></tr><tr><td>WSL-1002</td><td>Omar Hassan</td><td>EGP 1,250</td><td><span class='status'>confirmed</span></td><td>0</td><td>—</td></tr><tr><td>WSL-1004</td><td>Mariam Ali</td><td>EGP 430</td><td><span class='status'>cancelled</span></td><td>0</td><td>—</td></tr><tr><td>WSL-1006</td><td>Nour Mostafa</td><td>EGP 760</td><td><span class='status'>rescheduled</span></td><td>0</td><td>—</td></tr><tr><td>WSL-1008</td><td>Hana Magdy</td><td>EGP 590</td><td><span class='status'>confirmed</span></td><td>0</td><td>—</td></tr></tbody></table></section>
+  <section><h2>Recent agent actions</h2><table><thead><tr><th>Time</th><th>Order</th><th>Action</th><th>Transition</th></tr></thead><tbody><tr><td>2026-10-01T18:59:27+00:00</td><td>WSL-1006</td><td>delivery rescheduled</td><td>failed_delivery → rescheduled</td></tr><tr><td>2026-10-01T18:54:32+00:00</td><td>WSL-1002</td><td>customer confirmed</td><td>needs_confirmation → confirmed</td></tr><tr><td>2026-10-01T18:53:44+00:00</td><td>WSL-1002</td><td>address corrected</td><td>address_needed → needs_confirmation</td></tr><tr><td>2026-10-01T18:43:34+00:00</td><td>WSL-1004</td><td>order cancelled</td><td>needs_review → cancelled</td></tr></tbody></table></section>
+</main></body></html>

@@ -1,0 +1,12 @@
+order_id,created_at,customer_name,phone,address,landmark,amount_egp,shipping_cost_egp,status,preferred_date,preferred_window,items,language
+WSL-1001,2026-09-29T08:15:00+03:00,Sara Adel,01012345678,"12 El Nasr St, Nasr City",Near City Stars,850,65,new,2026-10-03,18:00-21:00,Running shoes,ar
+WSL-1002,2026-09-29T08:31:00+03:00,Omar Hassan,01198765432,"Nasr City",,1250,70,new,2026-10-03,12:00-15:00,Wireless headphones,ar
+WSL-1003,2026-09-29T08:42:00+03:00,Mariam Ali,01222223333,"24 Tahrir St, Dokki",Metro Market,430,55,new,2026-10-03,15:00-18:00,Skin care bundle,en
+WSL-1004,2026-09-29T08:45:00+03:00,Mariam Ali,01222223333,"24 Tahrir St, Dokki",Metro Market,430,55,new,2026-10-03,15:00-18:00,Skin care bundle,en
+WSL-1005,2026-09-29T09:05:00+03:00,Ahmed Samir,01005015881,"7 Abbas El Akkad St",KFC,2100,80,new,2026-10-04,18:00-21:00,Smart watch,ar
+WSL-1006,2026-09-29T09:20:00+03:00,Nour Mostafa,01555554444,"31 Syria St, Mohandessin",Bank branch,760,60,failed_delivery,2026-09-29,12:00-15:00,Backpack,ar
+WSL-1007,2026-09-29T09:38:00+03:00,Youssef Khaled,01077778888,"5 Road 9, Maadi",Metro station,3200,90,new,2026-10-04,12:00-15:00,Office chair,en
+WSL-1008,2026-09-29T10:02:00+03:00,Hana Magdy,01133334444,"18 El Hegaz St, Heliopolis",Mobil station,590,60,confirmed,2026-10-04,18:00-21:00,Perfume,ar
+WSL-1009,2026-09-29T10:17:00+03:00,Karim Wael,01288889999,"6 El Geish Rd, Alexandria",San Stefano,980,85,new,2026-10-05,12:00-15:00,Football jersey,ar
+WSL-1010,2026-09-29T10:34:00+03:00,Laila Emad,01044445555,"Sheikh Zayed",,1450,75,new,2026-10-04,15:00-18:00,Coffee machine,en
+
